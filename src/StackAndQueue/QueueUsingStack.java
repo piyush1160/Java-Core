@@ -1,5 +1,5 @@
 package StackAndQueue;
-
+// queue implementation from stack s
 import java.util.Stack;
 
 public class QueueUsingStack {
@@ -21,7 +21,9 @@ public class QueueUsingStack {
         while (!second.isEmpty()){
             first.push(second.pop());
         }
+
         return removed;
+
     }
 
     public int peek(){
