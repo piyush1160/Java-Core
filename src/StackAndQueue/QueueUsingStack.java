@@ -12,6 +12,17 @@ public class QueueUsingStack {
     }
     public void add(int item){
         first.push(item);
+
+        // effective way
+//        while(!first.isEmpty()){
+//            second.push(first.pop());
+//        }
+//
+//       first.push(item);
+//        while (!second.isEmpty()){
+//            first.push(second.pop());
+//        }
+
     }
     public int remove() throws Exception{
         while(!first.isEmpty()){
@@ -23,6 +34,8 @@ public class QueueUsingStack {
         }
 
         return removed;
+        // effective way
+      //  retrun first.pop();
 
     }
 
